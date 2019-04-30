@@ -463,7 +463,7 @@ export class SimplePdfViewerComponent implements OnInit, OnDestroy {
       }
       let progressSrc: any;
       if (typeof this.src === 'string') {
-        progressSrc = PDFJS.getDocument({url: this.src, withCredentials: true} as any);
+        progressSrc = PDFJS.getDocument({url: this.src} as any);
       } else {
         progressSrc = PDFJS.getDocument(this.src as any);
       }
